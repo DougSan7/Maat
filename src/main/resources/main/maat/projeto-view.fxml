@@ -22,18 +22,21 @@
     <Label text="Data Fim:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
     <DatePicker fx:id="dataFimField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
 
-    <Button onAction="#salvarProjeto" text="Salvar Projeto" GridPane.columnSpan="2" GridPane.rowIndex="6" />
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+    <Button onAction="#voltarParaMenu" text="Voltar" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <Button onAction="#salvarProjeto" text="Salvar Projeto" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
 
 </GridPane>
