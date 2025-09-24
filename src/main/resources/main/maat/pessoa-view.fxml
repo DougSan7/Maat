@@ -16,17 +16,19 @@
     <Label text="Departamento:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
     <TextField fx:id="departamentoField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
-    <Button onAction="#salvarPessoa" text="Salvar Pessoa" GridPane.columnSpan="2" GridPane.rowIndex="4" />
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+    <Button onAction="#voltarParaMenu" text="Voltar" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Button onAction="#salvarPessoa" text="Salvar Pessoa" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
 
 </GridPane>
