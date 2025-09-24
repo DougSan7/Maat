@@ -1,10 +1,12 @@
 package main.maat.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Alert;
 import main.maat.DAO.ProjetoDAO;
+import main.maat.MainApplication;
 import main.maat.model.Projeto;
 
 public class ProjetoController {
@@ -32,7 +34,7 @@ public class ProjetoController {
         p.setNome(nomeField.getText());
         p.setDescricao(descricaoField.getText());
         p.setDataInicio(dataInicioField.getValue());
-        p.setDataFim(dataPrevistaFimField.getValue());
+        p.setDataPrevistaFim(dataPrevistaFimField.getValue()); // Corrigido de setDataFim para setDataPrevistaFim
         p.setDataFim(dataFimField.getValue());
 
         projetoDAO.salvar(p);
@@ -42,5 +44,15 @@ public class ProjetoController {
         alert.setHeaderText(null);
         alert.setContentText("Projeto cadastrado com sucesso!");
         alert.showAndWait();
+    }
+
+    /**
+     * NOVO MÉTODO
+     * Chamado pelo botão "Voltar".
+     * Leva o usuário de volta para o menu principal.
+     */
+    @FXML
+    private void voltarParaMenu(ActionEvent event) {
+        MainApplication.trocarTela("dashboard.fxml", 600, 400);
     }
 }
