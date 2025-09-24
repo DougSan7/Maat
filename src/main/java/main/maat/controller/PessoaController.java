@@ -1,9 +1,11 @@
 package main.maat.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import main.maat.DAO.PessoaDAO;
+import main.maat.MainApplication;
 import main.maat.model.Pessoa;
 
 public class PessoaController {
@@ -33,5 +35,15 @@ public class PessoaController {
         alert.setHeaderText(null);
         alert.setContentText("Pessoa cadastrada com sucesso!");
         alert.showAndWait();
+    }
+
+    /**
+     * NOVO MÉTODO
+     * Chamado pelo botão "Voltar".
+     * Leva o usuário de volta para o menu principal.
+     */
+    @FXML
+    private void voltarParaMenu(ActionEvent event) {
+        MainApplication.trocarTela("dashboard.fxml", 600, 400);
     }
 }
