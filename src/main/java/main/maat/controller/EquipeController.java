@@ -1,11 +1,13 @@
 package main.maat.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import main.maat.DAO.EquipeDAO;
 import main.maat.DAO.PessoaDAO;
+import main.maat.MainApplication;
 import main.maat.model.Equipe;
 import main.maat.model.Pessoa;
 
@@ -40,6 +42,8 @@ public class EquipeController {
         Pessoa selecionado = membrosComboBox.getValue();
         if (selecionado != null) {
             equipeAtual.adicionarMembro(selecionado);
+            // Opcional: dar um feedback ao usuário
+            membrosComboBox.getSelectionModel().clearSelection();
         }
     }
 
@@ -58,5 +62,14 @@ public class EquipeController {
 
         equipeAtual = new Equipe(); // resetar após salvar
     }
-}
 
+    /**
+     * MÉTODO ADICIONADO AQUI
+     * Chamado pelo botão "Voltar".
+     * Leva o usuário de volta para o menu principal.
+     */
+    @FXML
+    private void voltarParaMenu(ActionEvent event) {
+        MainApplication.trocarTela("dashboard.fxml", 600, 400);
+    }
+}
