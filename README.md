@@ -1,6 +1,6 @@
 # Maat
 
-**Maat** é um projeto em desenvolvimento voltado para (descreva aqui o propósito do sistema: ex. gerenciamento, integração com banco de dados, sistema acadêmico, etc.).
+**Maat** é um projeto em desenvolvimento voltado para gerenciamento de projetos e equipes.
 
 ## ✨ Funcionalidades
 
@@ -57,8 +57,8 @@ cd Maat
 ## 👥 Autores e Colaboradores
 
 - **Douglas Santos** — Desenvolvedor principal — [DougSan7](https://github.com/DougSan7)  
-- **Peehnrq Pedro Parra** — Colaborador  
-- **PalomaFerro** — Colaboradora  
+- **Pedro Parra** — Colaborador  [Peehnrq](https://github.com/Peehnrq)
+- **Paloma Ferro** — Colaboradora [PalomaFerro](https://github.com/PalomaFerro)
 
 ## 🤝 Contribuição
 
